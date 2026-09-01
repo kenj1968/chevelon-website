@@ -696,6 +696,230 @@ p.lead {
   padding: 78px 0 84px;
 }
 
+.products-weightspan-section {
+  padding: 84px 0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(208,154,108,.18), transparent 28%),
+    linear-gradient(180deg, #FBF8F3, #F3E9DC);
+}
+
+.products-weightspan-section .feature-row strong {
+  color: var(--navy);
+}
+
+.weightspan-product-feature {
+  align-items: center;
+}
+
+.weightspan-visual {
+  position: relative;
+  min-height: 475px;
+  overflow: hidden;
+  border: 1px solid rgba(15,31,46,.12);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 76% 22%, rgba(255,255,255,.74), transparent 24%),
+    linear-gradient(145deg, #ECD7C1, #C9825D 52%, #8E432B);
+  box-shadow: var(--shadow);
+  isolation: isolate;
+}
+
+.weightspan-visual::before {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border: 1px solid rgba(255,255,255,.42);
+  border-radius: 20px;
+}
+
+.weightspan-visual-dark {
+  border-color: rgba(255,255,255,.14);
+  background:
+    radial-gradient(circle at 76% 22%, rgba(240,161,118,.30), transparent 24%),
+    linear-gradient(145deg, #1B3A52, #102738 52%, #091822);
+}
+
+.weightspan-concept-label {
+  position: absolute;
+  z-index: 4;
+  top: 42px;
+  left: 44px;
+  padding: 7px 12px;
+  border: 1px solid rgba(255,255,255,.58);
+  border-radius: 999px;
+  background: rgba(15,31,46,.72);
+  color: var(--white);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.weightspan-orbit {
+  position: absolute;
+  border: 1px solid rgba(255,255,255,.30);
+  border-radius: 50%;
+}
+
+.weightspan-orbit-large {
+  width: 420px;
+  height: 420px;
+  top: -92px;
+  right: -100px;
+}
+
+.weightspan-orbit-small {
+  width: 240px;
+  height: 240px;
+  top: -2px;
+  right: -10px;
+}
+
+.weightspan-chart {
+  position: absolute;
+  z-index: 2;
+  left: 11%;
+  right: 11%;
+  top: 39%;
+  height: 120px;
+  transform: rotate(-4deg);
+}
+
+.weightspan-chart-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 8px 22px rgba(15,31,46,.20);
+  transform: skewY(-8deg);
+}
+
+.weightspan-chart-point {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 4px solid rgba(255,255,255,.92);
+  border-radius: 50%;
+  background: var(--rust);
+  box-shadow: 0 7px 18px rgba(15,31,46,.24);
+}
+
+.point-one { left: 1%; top: 76px; }
+.point-two { left: 33%; top: 61px; }
+.point-three { left: 65%; top: 29px; }
+.point-four { right: 1%; top: 8px; }
+
+.weightspan-visual-copy {
+  position: absolute;
+  z-index: 3;
+  left: 44px;
+  right: 44px;
+  bottom: 42px;
+  color: var(--white);
+}
+
+.weightspan-visual-copy span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.weightspan-visual-copy strong {
+  display: block;
+  max-width: 420px;
+  font-family: Cinzel, Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.55rem);
+  line-height: 1.12;
+}
+
+.weightspan-hero {
+  padding: 86px 0 92px;
+}
+
+.weightspan-hero h1 {
+  color: var(--white);
+  font-size: clamp(2.8rem, 5vw, 4.7rem);
+  letter-spacing: -.025em;
+}
+
+.weightspan-hero .product-copy .btn {
+  margin-top: 18px;
+}
+
+.weightspan-features {
+  background: var(--offwhite);
+}
+
+.weightspan-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.weightspan-feature-grid .card {
+  min-height: 220px;
+}
+
+.weightspan-feature-grid .feature-dot {
+  margin-bottom: 22px;
+  font-size: .72rem;
+}
+
+.weightspan-feature-grid p {
+  color: var(--muted);
+}
+
+.weightspan-privacy-band {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(195,87,42,.18), transparent 30%),
+    linear-gradient(135deg, var(--navy-2), #0A1823 82%);
+  color: var(--white);
+}
+
+.weightspan-privacy-band h2 {
+  color: var(--white);
+}
+
+.weightspan-privacy-band p {
+  color: #D5DEE5;
+}
+
+.weightspan-privacy-band .btn {
+  margin-top: 14px;
+}
+
+.weightspan-availability {
+  background: var(--cream);
+  border-top: 1px solid rgba(15,31,46,.10);
+}
+
+.weightspan-availability a,
+.privacy-content a,
+.support-card a {
+  color: var(--rust);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.product-privacy-policy {
+  margin-top: 68px;
+  padding-top: 54px;
+  border-top: 2px solid var(--navy);
+  scroll-margin-top: 120px;
+}
+
+.privacy-policy-block p + p,
+.support-card p + p {
+  margin-top: 14px;
+}
+
 .repguide-hero {
   padding: 86px 0 92px;
 }
@@ -961,6 +1185,23 @@ p.lead {
     padding: 76px 0;
   }
 
+  .products-weightspan-section,
+  .weightspan-hero {
+    padding: 76px 0;
+  }
+
+  .weightspan-feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .weightspan-hero .product-copy {
+    order: 1;
+  }
+
+  .weightspan-hero .weightspan-visual {
+    order: 2;
+  }
+
   .repguide-hero {
     padding: 76px 0;
   }
@@ -994,6 +1235,25 @@ p.lead {
 }
 
 @media (max-width: 620px) {
+  .weightspan-visual {
+    min-height: 400px;
+  }
+
+  .weightspan-concept-label {
+    top: 36px;
+    left: 34px;
+  }
+
+  .weightspan-visual-copy {
+    left: 34px;
+    right: 34px;
+    bottom: 36px;
+  }
+
+  .weightspan-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
   .repguide-hero {
     padding: 68px 0;
   }

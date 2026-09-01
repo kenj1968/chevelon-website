@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>Privacy | Chevelon Software</title>
-<meta name="description" content="Learn how Chevelon Software handles privacy and how RepGuide stores and protects workout data.">
+<meta name="description" content="Learn how Chevelon Software handles privacy and how RepGuide and WeightSpan store and process product data.">
 </head>
 <body>
 
@@ -37,7 +37,7 @@
       <a href="products.html">Products</a>
       <a href="about.html">About</a>
       <a href="support.html">Support</a>
-      <a class="btn btn-primary" href="repguide.html">Explore RepGuide</a>
+      <a class="btn btn-primary" href="products.html">Explore products</a>
     </nav>
   </div>
 </header>
@@ -53,76 +53,86 @@
 
 <section class="section privacy-section">
   <div class="container privacy-content">
-    <h2>RepGuide Privacy Policy</h2>
+    <h2>Chevelon Software Privacy Policy</h2>
     <p class="privacy-effective-date"><strong>Effective Date:</strong> August 2026</p>
 
-    <article class="privacy-policy-block">
-      <h3>Overview</h3>
-      <p>RepGuide does not require an account. Workout content remains stored locally on the user's device. RepGuide uses limited product analytics to understand general feature usage and improve the product.</p>
-    </article>
+    <div class="product-privacy-policy">
+      <h2>RepGuide</h2>
 
-    <article class="privacy-policy-block">
-      <h3>Information We Collect</h3>
-      <p>RepGuide does not collect:</p>
-      <ul>
-        <li>Name</li>
-        <li>Email address</li>
-        <li>Phone number</li>
-        <li>Physical address</li>
-        <li>Payment information</li>
-        <li>Contacts</li>
-        <li>Photos</li>
-        <li>Location</li>
-      </ul>
-      <p>RepGuide may collect limited product-usage and technical analytics information, such as an anonymous or pseudonymous analytics identifier, app version or build, platform, feature-use events, coarse counts and categories, reminder setting categories, progression interaction events, general workout activity events such as whether a workout was started, completed, or canceled, and JavaScript error reports for uncaught exceptions and unhandled promise rejections.</p>
-    </article>
+      <article class="privacy-policy-block">
+        <h3>Data Stored on Your Device</h3>
+        <p>RepGuide does not require an account. Workout content remains stored locally on the user's device. Workout data includes workouts, machines, weights, repetitions, notes, settings, and history.</p>
+        <p>Device security such as a passcode or biometric protection helps protect locally stored workout history.</p>
+      </article>
 
-    <article class="privacy-policy-block">
-      <h3>Workout Data</h3>
-      <p>Workout data is stored locally on the user's device. Workout data includes workouts, machines, weights, repetitions, notes, settings, and history.</p>
-      <p>RepGuide analytics and error reports are intentionally designed not to include workout names, machine names, workout notes, machine notes, exact weights, exact repetitions, detailed workout-history records, or free-text user content.</p>
-    </article>
+      <article class="privacy-policy-block">
+        <h3>Usage and Diagnostic Data</h3>
+        <p>Chevelon Software collects limited product-use events to improve the app. PostHog processes these events on behalf of Chevelon Software.</p>
+        <p>Product-use events and any future diagnostic information do not include workout details, machine names, notes, or other user-entered content.</p>
+        <p>Diagnostic and error reporting is not currently enabled because shared PostHog Exception Autocapture remains off. If it is enabled in a future release, diagnostic information will be sanitized.</p>
+      </article>
 
-    <article class="privacy-policy-block">
-      <h3>Notifications</h3>
-      <p>Workout reminders are scheduled locally on the user's device. RepGuide may record limited product analytics such as whether reminders are enabled or disabled and broad configuration categories.</p>
-    </article>
+      <article class="privacy-policy-block">
+        <h3>Advertising and Cross-App Tracking</h3>
+        <p>This app does not use advertising or cross-app tracking.</p>
+      </article>
 
-    <article class="privacy-policy-block">
-      <h3>Third-Party Services</h3>
-      <p>RepGuide uses PostHog for product analytics and JavaScript error tracking. PostHog processes limited product-usage and error-diagnostic information on behalf of Chevelon Software. Error reports may include diagnostic details such as error messages, stack traces, app version or build, platform, and where in the app an error occurred. Source maps are uploaded to PostHog so JavaScript errors can be diagnosed.</p>
-      <p>Session Replay, autocapture, and native crash capture are not enabled. GeoIP enrichment is disabled where configured, and analytics is not used for advertising.</p>
-    </article>
+      <article class="privacy-policy-block">
+        <h3>Local Data Management</h3>
+        <p>Workout reminders are scheduled locally on the user's device.</p>
+      </article>
+    </div>
 
-    <article class="privacy-policy-block">
-      <h3>Data Sharing</h3>
-      <p>Chevelon Software does not sell or rent user data. Limited analytics and error-diagnostic information is transmitted to PostHog as a service provider used to understand product usage, diagnose JavaScript errors, and improve RepGuide.</p>
-    </article>
+    <div class="product-privacy-policy" id="weightspan-privacy">
+      <h2>WeightSpan</h2>
 
-    <article class="privacy-policy-block">
-      <h3>Data Security</h3>
-      <p>Workout data is stored locally on the user's device. Device security such as a passcode or biometric protection helps protect locally stored workout history.</p>
-    </article>
+      <article class="privacy-policy-block">
+        <h3>Data Stored on Your Device</h3>
+        <p>WeightSpan is a local-first Android app. Core weight, profile, and reminder data is stored locally on the device. WeightSpan has no user accounts and does not sync that data to Chevelon Software.</p>
+        <p>Weight entries, profile information, reminder settings, and related history remain on the device unless the user chooses to export data.</p>
+      </article>
 
-    <article class="privacy-policy-block">
-      <h3>Children's Privacy</h3>
-      <p>RepGuide is not directed toward children under 13.</p>
-    </article>
+      <article class="privacy-policy-block">
+        <h3>Usage and Diagnostic Data</h3>
+        <p>Chevelon Software collects limited product-use events to improve the app. PostHog processes these events on behalf of Chevelon Software.</p>
+        <p>Product-use events and any future diagnostic information do not include weight, BMI, height, dates, notes, reminder details, or other entered health information.</p>
+        <p>Diagnostic and error reporting is not currently enabled because shared PostHog Exception Autocapture remains off. If it is enabled in a future release, diagnostic information will be sanitized.</p>
+      </article>
 
-    <article class="privacy-policy-block">
-      <h3>Future Features</h3>
-      <p>If future versions introduce cloud backup, account synchronization, AI coaching, or materially different data practices, this policy will be updated before those features are made available.</p>
-    </article>
+      <article class="privacy-policy-block">
+        <h3>Advertising and Cross-App Tracking</h3>
+        <p>This app does not use advertising or cross-app tracking.</p>
+      </article>
 
-    <article class="privacy-policy-block">
-      <h3>Changes to This Policy</h3>
-      <p>The Effective Date identifies the latest version of this policy.</p>
-    </article>
+      <article class="privacy-policy-block">
+        <h3>Local Data Management</h3>
+        <p>CSV exports are created at the user's request and are handled through the location or app the user chooses when exporting.</p>
+      </article>
+    </div>
 
-    <article class="privacy-policy-block">
-      <h3>Contact</h3>
-      <p>For privacy questions or requests, contact <a href="mailto:support@chevelonsoftware.com">support@chevelonsoftware.com</a>.</p>
-    </article>
+    <div class="product-privacy-policy">
+      <h2>Additional Policy Information</h2>
+
+      <article class="privacy-policy-block">
+        <h3>Children's Privacy</h3>
+        <p>RepGuide is not directed toward children under 13.</p>
+      </article>
+
+      <article class="privacy-policy-block">
+        <h3>Future Features</h3>
+        <p>If future versions introduce cloud backup, account synchronization, AI coaching, or materially different data practices, this policy will be updated before those features are made available.</p>
+      </article>
+
+      <article class="privacy-policy-block">
+        <h3>Changes to This Policy</h3>
+        <p>The Effective Date identifies the latest version of this policy.</p>
+      </article>
+
+      <article class="privacy-policy-block">
+        <h3>Contact</h3>
+        <p>For privacy questions or requests, contact <a href="mailto:support@chevelonsoftware.com">support@chevelonsoftware.com</a>.</p>
+      </article>
+    </div>
   </div>
 </section>
 </main>
