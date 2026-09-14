@@ -949,6 +949,11 @@ p.lead {
   .repguide-hero .product-visual {
     min-height: 540px;
   }
+
+  .weightspan-hero .product-visual,
+  .products-weightspan-section .product-visual {
+    min-height: 550px;
+  }
 }
 
 .repguide-story {
@@ -1246,6 +1251,10 @@ p.lead {
 }
 
 @media (max-width: 620px) {
+  .section-dark.weightspan-hero .product-copy h1 {
+    font-size: clamp(2.25rem, 9vw, 2.75rem);
+  }
+
   .weightspan-visual {
     min-height: 400px;
   }
